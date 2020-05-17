@@ -1,0 +1,18 @@
+# Node modules
+node_modules
+
+# Adonis directory for storing tmp files
+tmp
+
+# Environment variables, never commit this file
+.env
+.env.example
+
+# The development sqlite file
+database/*.sqlite
+
+# The .editorconfig
+.editorconfig
+
+# The manager package
+/package-lock.json
