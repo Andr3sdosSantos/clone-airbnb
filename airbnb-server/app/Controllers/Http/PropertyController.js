@@ -9,7 +9,7 @@ class PropertyController {
 
     const properties = Property.query()
       .with('images')
-      .nearBy(latitude, longitude, 10)
+      .neraBy(latitude, longitude, 10)
       .fetch()
 
     return properties
@@ -25,7 +25,7 @@ class PropertyController {
       'price'
     ])
 
-    const property = await Property.create({...data, user_id: id })
+    const property = await Property.create({ ...data, user_id: id })
 
     return property
   }
